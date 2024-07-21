@@ -22,8 +22,8 @@ export default function Home() {
             <Header.Item name="for figma" Icon={Icons.arrowUpRight} IconColor="black" IconSize={25} />
           </Header.List>
         </Header.Content>
-        <Image src={Files.logomain} width={1500} className="object-cover mx-auto" height={0} alt="The official logo of the Partak brand, featuring unique graphic elements" />
-        <main className="p-5">
+        <Image src={Files.logomain} width={1000} className="object-cover mx-auto" height={0} alt="The official logo of the Partak brand, featuring unique graphic elements" />
+        <main className="p-5 grid gap-10">
           <Search.Content>
             <Search.Input />
             <Search.Button bg="bg-white"
@@ -40,8 +40,8 @@ export default function Home() {
               color="text-white" hoverBg="hover:bg-grafit" hoverBorder="hover:border-rose" hoverText="hover:text-rose"/>
           </Search.Content>
           <div className="grid gap-[.6rem] grid-cols-3 grid-flow-row
-           pt-5 pl-2 pb-5  h-full place-items-start max-h-[600px] max-sm:grid-cols-1 max-sm:place-items-center max-md:grid-cols-2
-             mt-5 overflow-hidden overflow-y-scroll lg:grid-cols-4 custom-scrollbar">
+          pl-3 p-5 h-full place-items-start max-h-[600px] max-sm:grid-cols-1 max-sm:place-items-center max-md:grid-cols-2
+             overflow-hidden overflow-y-scroll lg:grid-cols-4 custom-scrollbar">
             {
               archives.map(el => (
                 <Card.Content name={el.name} key={el.id}>

@@ -11,13 +11,11 @@ export default function ItemComponent({ name, Icon, IconColor, IconSize }: ItemP
     return (<>
         {
             Icon && (
-
-
                 <li className="border-4
                 border-grafit flex gap-2
-                w-full max-w-[200px] p-3 rounded-3xl items-center justify-center font-semibold uppercase
+                w-full max-w-[200px] p-[5px] rounded-3xl items-center justify-center font-semibold uppercase
                 tracking-widest text-grafit  bg-white max-lg:hover:bg-white hover:bg-rose hover:animate-pulse transition-all cursor-pointer
-                hover:border-rose hover:text-grafit text-lg">{name}{Icon && <Icon size={IconSize} color={IconColor} />}
+                hover:border-rose hover:text-grafit text-sm">{name}{Icon && <Icon size={IconSize} color={IconColor} />}
                 </li>
             )
         }
@@ -25,9 +23,9 @@ export default function ItemComponent({ name, Icon, IconColor, IconSize }: ItemP
 
             <li className="border-4
             border-white max-lg:border-grafit flex gap-2
-            w-full max-w-[200px] p-3 rounded-3xl items-center justify-center font-semibold uppercase
+            w-full max-w-[200px] p-[5px] rounded-3xl items-center justify-center font-semibold uppercase
             tracking-widest max-lg:text-grafit text-white hover:animate-pulse transition-all cursor-pointer
-            hover:border-rose hover:text-rose max-lg:hover:text-grafit text-lg">{name}
+            hover:border-rose hover:text-rose max-lg:hover:text-grafit text-sm">{name}
             </li>
         )
         }

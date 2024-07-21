@@ -30,14 +30,13 @@ export default function ListComponent({ children }: ListProps) {
     }
     return (<>
         {open && (
-            <ul className="flex w-full h-auto 
+            <ul className="flex w-full h-auto overflow-hidden
                     max-lg:absolute 
                     max-lg:top-0
                     items-center justify-end
                     max-lg:bg-white max-lg:max-w-[400px]
                      max-lg:grid max-lg:h-screen max-lg:right-0 
-                     overflow-hidden
-                     max-lg:place-content-center gap-10">
+                     max-lg:place-content-center gap-5">
                 {children}
             </ul>
         )}
@@ -45,9 +44,10 @@ export default function ListComponent({ children }: ListProps) {
             !open && (
                 <ul className="flex w-full 
             h-auto 
-            items-center justify-end gap-5
-             overflow-hidden
+            items-center justify-center gap-1
+            overflow-hidden
              max-lg:hidden
+             max-w-[700px]
              ">
                     {children}
                 </ul>
