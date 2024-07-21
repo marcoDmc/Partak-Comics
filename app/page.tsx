@@ -19,7 +19,7 @@ export default function Home() {
             <Header.Item name="packs" />
             <Header.Item name="about us" />
             <Header.Item name="contact us" />
-            <Header.Item name="for figma" Icon={Icons.arrowUpRight} IconColor="black" IconSize={25} />
+            <Header.Item name="for figma" Icon={Icons.arrowUpRight} IconColor="black" IconSize={15} />
           </Header.List>
         </Header.Content>
         <Image src={Files.logomain} width={1000} className="object-cover mx-auto" height={0} alt="The official logo of the Partak brand, featuring unique graphic elements" />

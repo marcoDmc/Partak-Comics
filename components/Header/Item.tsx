@@ -13,6 +13,7 @@ export default function ItemComponent({ name, Icon, IconColor, IconSize }: ItemP
             Icon && (
                 <li className="border-4
                 border-grafit flex gap-2
+                pl-[10px] pr-[10px]
                 w-full max-w-[200px] p-[5px] rounded-3xl items-center justify-center font-semibold uppercase
                 tracking-widest text-grafit  bg-white max-lg:hover:bg-white hover:bg-rose hover:animate-pulse transition-all cursor-pointer
                 hover:border-rose hover:text-grafit text-sm">{name}{Icon && <Icon size={IconSize} color={IconColor} />}
